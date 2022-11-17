@@ -16,7 +16,8 @@ const
 
 const 
 {
-    registerUser
+    registerUser,
+    newPost
 } = require('./mutations')
 
 const QueryType = new GraphQLObjectType({
@@ -31,7 +32,8 @@ const MutationType = new GraphQLObjectType({
     name: "MutationType",
     description: "Esta es la MutationType de leoarayav API",
     fields: {
-        registerUser
+        registerUser,
+        newPost
     }
 })
 

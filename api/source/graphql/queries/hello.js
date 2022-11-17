@@ -1,3 +1,8 @@
+/**
+ * @query hello
+ * @version 0.0.1 (static)
+ */
+
 const { GraphQLString } = require('graphql')
 
 const hello = {
