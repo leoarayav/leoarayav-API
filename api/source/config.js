@@ -5,15 +5,13 @@
 */
 
 // Modulo necesario para hacer una configuracion.
-const config = require('dotenv').config
-
-config()
+const config = require('dotenv').config()
 
 // Exportamos nuestra configuración.
 module.exports = {
 
     // Default port of API server
-    PORT: process.env.PORT || 3000,
+    PORT: process.env.PORT || 5777,
 
     // Database details :-)
     DATABASE: {
