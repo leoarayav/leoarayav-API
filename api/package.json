@@ -8,14 +8,17 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
+  "type": "commonjs",
   "description": "",
   "dependencies": {
     "dotenv": "^16.0.3",
     "express": "^4.18.2",
     "express-graphql": "^0.12.0",
+    "express-handlebars": "^6.0.6",
     "graphql": "^16.6.0",
     "jsonwebtoken": "^8.5.1",
-    "mongoose": "^6.6.7"
+    "mongoose": "^6.6.7",
+    "node-fetch": "^3.3.0"
   },
   "devDependencies": {
     "nodemon": "^2.0.20"
