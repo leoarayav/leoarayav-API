@@ -1,9 +1,9 @@
 <div align="center">
-  <h2>leoarayav's API</h2>
+  <h2>leoarayav's API release two</h2>
 </div>
 
 ### Introduction
-> Under in development
+This is the second release of leorarayav-API with new features.
 
 ### License
 MIT
