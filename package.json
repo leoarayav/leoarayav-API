@@ -1,0 +1,35 @@
+{
+  "name": "leoarayav-api-r2",
+  "version": "1.0.0",
+  "description": "Second Development of leoarayav API",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon source/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/leoarayav/leoarayav-API.git"
+  },
+  "keywords": [],
+  "author": "leoarayav (https://www.github.com/leoarayav)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/leoarayav/leoarayav-API/issues"
+  },
+  "homepage": "https://github.com/leoarayav/leoarayav-API#readme",
+  "devDependencies": {
+    "nodemon": "^2.0.20"
+  },
+  "dependencies": {
+    "axios": "^1.2.0",
+    "compression": "^1.7.4",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "express-graphql": "^0.12.0",
+    "express-handlebars": "^6.0.6",
+    "graphql": "^16.6.0",
+    "mongoose": "^6.7.3",
+    "morgan": "^1.10.0"
+  }
+}

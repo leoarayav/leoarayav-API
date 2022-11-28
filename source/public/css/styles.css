@@ -1,0 +1,124 @@
+* {
+    margin: 0;
+    padding: 0;
+    background: #202020;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 
+            'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 
+            'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+/* Main styles development */
+
+.main 
+{
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-title {
+    font-size: 50px;
+    color: teal;
+    font-weight: 700;
+    text-align: center;
+}
+
+.main-description {
+    font-size: 20px;
+    color: #fff;
+    font-weight: 400;
+    text-align: center;
+    margin-left: 20px;
+}
+
+.main-buttons {
+    margin: 0;
+    position: absolute;
+    top: 60%;
+    display: inline;
+}
+
+.button-data {
+    transition: 0.4s;
+    background: #fff;
+    color: #202020;
+    font-size: 20px;
+    font-weight: 700;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin: 0 10px;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+.button-graphql {
+    transition: 0.4s;
+    background: #f7598d9a;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 700;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin: 0 10px;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+.button-graphql:hover {
+    background: #202020;
+    color: #fff;
+}
+
+.button-data:hover {
+    background: #202020;
+    color: #fff;
+}
+
+/* Data site development */
+
+.data {
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.data-title {
+    font-size: 50px;
+    color: cyan;
+    font-weight: 700;
+    text-align: center;
+}
+
+.data-brief {
+    margin-top: 3px;
+    color: #fff;
+    margin-left: 10px;
+}
+
+/* Footer development */
+
+footer {
+    color: #fff;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 85px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-paragraph {
+    font-size: 16px;
+    color: #909090;
+    font-weight: 400;
+    text-align: center;
+}
+
+.footer-author {
+    color: teal;
+}

@@ -1,0 +1,9 @@
+{
+    "name": "GrupoTest",
+    "subject": "Grupo",
+    "members": [
+        {
+           "usersId": [1, 2, 3, 4] 
+        }
+    ]
+}
