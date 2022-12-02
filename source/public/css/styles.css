@@ -58,7 +58,19 @@
     background: #f7598d9a;
     color: #fff;
     font-size: 20px;
-    font-weight: 700;
+    font-weight: 600;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin: 0 10px;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+.button-source {
+    background: rgb(55, 55, 56);
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: 500;
     padding: 10px 20px;
     border-radius: 5px;
     margin: 0 10px;
