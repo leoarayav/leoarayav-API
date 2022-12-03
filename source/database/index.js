@@ -37,6 +37,7 @@ module.exports = {
     OnDatabaseCheckout,
     OnDatabaseDisconnection,
     models: {
-        User: require('./models/user.model')
+        User: require('./models/user.model'),
+        Post: require('./models/post.model')
     }
 }
