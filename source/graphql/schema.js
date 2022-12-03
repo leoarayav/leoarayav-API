@@ -10,6 +10,11 @@ const
     hello
 } = require('./queries')
 
+const
+{
+    createUser
+} = require('./mutations')
+
 /**
  * Definition of the root query
  * @type GraphQLObjectType
@@ -22,7 +27,21 @@ const QueryType = new GraphQLObjectType({
     }
 })
 
+/**
+ * Definition of the root mutation.
+ * @type GraphQLObjectType
+ */
+const MutationType = new GraphQLObjectType({
+    name: "MutationType",
+    description: "Root mutation type for the GraphQL API of leoarayav",
+    fields: {
+        createUser
+    }
+})
+
+
 module.exports = new GraphQLSchema
 ({
-    query: QueryType
+    query: QueryType,
+    mutation: MutationType
 })

@@ -11,7 +11,7 @@ const { ObjectId } = require('mongoose').Types
  * @author Leo Araya
  */
 module.exports = {
-    CreateUser: async (args) => {
+    RegisterUser: async (args) => {
         const newUser = new User(args)
         await newUser.save()
         return newUser

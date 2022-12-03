@@ -10,12 +10,16 @@ const compression = require('compression')
 const exphbs = require('express-handlebars')
 const path = require('path')
 const egql = require('express-graphql')
+const bodyParser = require('body-parser')
 
 // Importing configuration.
 const { PORT, DOMAIN } = require('./config')
 
 // Importing the schema.
 const schema = require('./graphql/schema')
+
+// Database
+const { OnDatabaseConnection } = require('./database')
 
 // Routes
 const IndexRoutes = require('./routes/index.routes')
@@ -37,6 +41,7 @@ const settings = () => {
     try {
         app.use(morgan('dev'))
         app.use(cors())
+        app.use(bodyParser.json())
         app.use(compression())
         app.use(express.urlencoded({ extended: false }))
         app.use(express.static(path.join(__dirname, 'public')))
@@ -67,6 +72,7 @@ const main = () => {
     try {
         settings()
         handlebars()
+        OnDatabaseConnection()
         app.listen(PORT, () => console.log(`Server running on ${DOMAIN}:${PORT}`))
         app.use('/graphql', egql.graphqlHTTP({ graphiql: true, schema }))
     } catch (error) {
