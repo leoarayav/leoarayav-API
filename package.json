@@ -31,6 +31,7 @@
     "express-graphql": "^0.12.0",
     "express-handlebars": "^6.0.6",
     "graphql": "^16.6.0",
+    "jsonwebtoken": "^8.5.1",
     "mongoose": "^6.7.3",
     "morgan": "^1.10.0"
   }
