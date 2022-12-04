@@ -58,7 +58,13 @@ const settings = () => {
  */
 const handlebars = async () => {
     try {
-        await app.engine('.hbs', exphbs.engine({ extname: '.hbs', layoutsDir: path.join(app.get('views'), 'layouts'), partialsDir: path.join(app.get('views'), 'partials')}))
+        await app.engine('.hbs', exphbs.engine
+        (
+            { 
+                extname: '.hbs', layoutsDir: path.join(app.get('views'), 'layouts'), 
+                partialsDir: path.join(app.get('views'), 'partials')
+            }
+        ))
     } catch (error) {
         console.log('Error while initializing the handlebars configuration: ', error)
     }
