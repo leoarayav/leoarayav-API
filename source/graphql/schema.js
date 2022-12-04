@@ -12,7 +12,8 @@ const
 
 const
 {
-    createUser
+    createUser,
+    createPost
 } = require('./mutations')
 
 /**
@@ -35,7 +36,8 @@ const MutationType = new GraphQLObjectType({
     name: "MutationType",
     description: "Root mutation type for the GraphQL API of leoarayav",
     fields: {
-        createUser
+        createUser,
+        createPost
     }
 })
 
