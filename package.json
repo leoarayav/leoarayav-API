@@ -3,6 +3,7 @@
   "version": "1.1.0",
   "description": "Second Backend Development of leoarayav API",
   "main": "index.js",
+  "type": "commonjs",
   "scripts": {
     "dev": "nodemon source/index.js"
   },
