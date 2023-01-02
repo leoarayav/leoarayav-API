@@ -11,7 +11,6 @@ const exphbs = require('express-handlebars')
 const path = require('path')
 const egql = require('express-graphql')
 const bodyParser = require('body-parser')
-const auth = require('./middlewares/auth')
 
 // Importing configuration.
 const { PORT, DOMAIN } = require('./config')
@@ -44,7 +43,6 @@ const settings = () => {
         app.use(cors())
         app.use(bodyParser.json())
         app.use(compression())
-        app.use(auth)
         app.use(express.urlencoded({ extended: false }))
         app.use(express.static(path.join(__dirname, 'public')))
         app.set('views', path.join(__dirname, 'views'))
