@@ -3,7 +3,12 @@
 </div>
 
 ### Introduction
-> Under in development
+This API i've created is for personal consumption and for data extracting
+
+### Releases
+- r1 (GraphQL version)
+- r2 (Advanced GraphQL & express version)
+- r3 (New featuring version)
 
 ### License
 MIT
