@@ -1,14 +1,11 @@
 <div align="center">
-  <h2>leoarayav's API</h2>
+  <h2>leoarayav's API - III</h2>
 </div>
 
-### Introduction
-This API i've created is for personal consumption and for data extracting
-
-### Releases
-- r1 (GraphQL version)
-- r2 (Advanced GraphQL & express version)
-- r3 (New featuring version)
+### Development.
+- Clone this repository using: _git clone [leoarayav-API-gh-link]_
+- Go into the main directory of the repository in your enviroment and install all dependencies using: _npm install --force_
+- Run the server development with: _npm run **dev**_
 
 ### License
 MIT
