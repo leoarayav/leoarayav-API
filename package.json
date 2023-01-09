@@ -1,0 +1,35 @@
+{
+  "name": "leoarayav-api",
+  "version": "1.0.0",
+  "description": "Third version of rest API",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node source/index.js",
+    "dev": "nodemon source/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/leoarayav/leoarayav-API.git"
+  },
+  "keywords": [],
+  "author": "Leo Araya (https://www.github.com/leoarayav)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/leoarayav/leoarayav-API/issues"
+  },
+  "homepage": "https://github.com/leoarayav/leoarayav-API#readme",
+  "dependencies": {
+    "cookie-parser": "^1.4.6",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "express-validator": "^6.14.2",
+    "http-errors": "^2.0.0",
+    "jsonwebtoken": "^9.0.0",
+    "morgan": "^1.10.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.20"
+  }
+}
