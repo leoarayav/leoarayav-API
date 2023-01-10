@@ -4,7 +4,6 @@
  */
 
 const express = require('express')
-const httpError = require('http-errors')
 const cors = require('cors')
 const cookieParser = require('cookie-parser')
 const { port } = require('./config')
@@ -19,13 +18,8 @@ app.use(express.json())
 app.use(express.urlencoded({ extended: false }))
 app.use(cookieParser())
 
-// Catching an error when a route is not found.
-app.use((req, res, next) => {
-    return next(httpError(404))
-})
-
 // Routing.
-app.use('/r3', require('./routes'))
+app.use('/last-release', require('./routes'))
 
 // Listening the connection.
 app.listen(port, () => {
