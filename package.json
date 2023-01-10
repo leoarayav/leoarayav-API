@@ -8,6 +8,7 @@
     "start": "node source/index.js",
     "dev": "nodemon source/index.js"
   },
+  "type": "commonjs",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/leoarayav/leoarayav-API.git"
