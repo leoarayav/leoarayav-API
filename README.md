@@ -8,7 +8,7 @@ This API i've created is for personal consumption and for data extracting
 ### Releases
 - r1 (GraphQL version)
 - r2 (Advanced GraphQL & express version)
-- r3 (New featuring version)
+- final-rel (New featuring version)
 
 ### License
 MIT
