@@ -1,0 +1,30 @@
+{
+  "name": "leoarayav-api",
+  "version": "1.0.0",
+  "description": "This is the final release of this API",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/leoarayav/leoarayav-API.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/leoarayav/leoarayav-API/issues"
+  },
+  "homepage": "https://github.com/leoarayav/leoarayav-API#readme",
+  "dependencies": {
+    "body-parser": "^1.20.1",
+    "compression": "^1.7.4",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "mongoose": "^6.8.3",
+    "morgan": "^1.10.0"
+  }
+}
