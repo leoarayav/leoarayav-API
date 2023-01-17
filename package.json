@@ -3,9 +3,9 @@
   "version": "1.0.0",
   "description": "This is the final release of this API",
   "main": "index.js",
-  "type": "module",
+  "type": "commonjs",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "api:dev": "nodemon server.js"
   },
   "repository": {
     "type": "git",
@@ -21,10 +21,14 @@
   "dependencies": {
     "body-parser": "^1.20.1",
     "compression": "^1.7.4",
+    "cookie-parser": "^1.4.6",
     "cors": "^2.8.5",
     "dotenv": "^16.0.3",
     "express": "^4.18.2",
     "mongoose": "^6.8.3",
     "morgan": "^1.10.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.20"
   }
 }

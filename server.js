@@ -3,23 +3,26 @@
  * @author Leo Araya
  */
 
-import express from "express"
-import bodyParser from "body-parser"
-import cors from "cors"
-import morgan from "morgan"
-import compression from "compression"
-import { configuration } from './configuration'
+const express = require('express')
+const morgan = require('morgan')
+const cors = require('cors')
+const compression = require('compression')
+const cookieParser = require('cookie-parser')
+const { port } = require('./configuration')
 
-
-// Creating an express application.
+// Creating the express aplication.
 const app = express()
 
 // Setting up the middlewares.
 app.use(cors())
-app.use(bodyParser.json())
-app.use(morgan('dev'))
 app.use(compression())
+app.use(morgan('dev'))
+app.use(express.json())
 app.use(express.urlencoded({ extended: false }))
+app.use(cookieParser())
 
-// Listening our application.
-app.listen(configuration.port, () => console.log("Server listening on", configuration.port))
+// Reading routes.
+app.use('/api', require('./routes'))
+
+// Listening our server API.
+app.listen(port, () => console.log('Listening the server API on port:', port))
