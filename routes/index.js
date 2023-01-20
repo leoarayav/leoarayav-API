@@ -10,7 +10,9 @@ const { Router } = require('express')
 const router = Router()
 
 // Main endpoint.
-router.get('/', (req, res) => res.send('Welcome to the API 🌍'))
+router.get('/', (req, res) => {
+    res.render('home')
+})
 
 // Here we'll exports all routes availables soon.
 

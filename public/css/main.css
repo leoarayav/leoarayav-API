@@ -1,0 +1,31 @@
+html,
+body {
+    background: #212121;
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+section {
+    margin-top: 40px;
+    padding: 20px 0;
+    text-align: center;
+    background: #212121;
+    color: #fff;
+}
+
+footer {
+    margin-top: 40px;
+    padding: 20px 0;
+    text-align: center;
+    background: #212121;
+    color: #fff;
+}
+
+footer .fa {
+    font-size: 22px;
+    color: #fff;
+    text-decoration: none;
+    display: inline-flex;
+    padding: 6px;
+    margin: 8px;
+}

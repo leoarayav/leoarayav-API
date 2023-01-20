@@ -6,6 +6,8 @@
 const mongo = require('mongoose')
 const { db } = require('../configuration')
 
+mongo.set('strictQuery', false)
+
 module.exports.database = {
     start: async (uri) => await mongo.connect(db.url || uri),
     checkout: async () => await mongo.connection.readyState == 1,
